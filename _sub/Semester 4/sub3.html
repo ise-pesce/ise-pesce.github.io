@@ -1,0 +1,26 @@
+---
+layout: sub
+title:
+---
+{% assign subpage = site.sem | where: 'title', 'Semester 4' %}
+{% for item in subpage %}
+  <h1 class="w3-center">{{ item.sub3 }}</h1>
+{% endfor %}
+<table class="w3-table-all w3-content w3-margin-bottom">
+  <tr>
+    <thead>
+      <th class="w3-center">File Name</th>
+      <th class="w3-center">Download Link</th>
+  </thead>
+  </tr>
+  <tbody>
+{% for file in site.static_files %}
+{% if file.path contains 'assets/sem4/sub3' %}
+  <tr>
+    <td>{{file.name}}</td>
+    <td class="w3-center"><a href="{{file.path}}" class="w3-button w3-card-4 w3-red w3-large w3-ripple w3-round" download>Download</a></td>
+  </tr>
+{% endif %}
+{% endfor %}
+</tbody>
+</table>
