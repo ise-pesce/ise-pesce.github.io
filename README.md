@@ -1,2 +1,2 @@
 # ise-pesce.github.io
-Website of Information Science and Engineering, PESCE
+A Jekyll Website of the department of Information Science and Engineering, PESCE.
