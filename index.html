@@ -2,7 +2,7 @@
 layout: default
 ---
 <h1 class="w3-center">{{ site.department }}</h2>
-<ul class="w3-ul w3-card-4 w3-content w3-hoverable w3-margin-bottom">
+<ul class="w3-ul w3-card-4 w3-content w3-margin-bottom">
   {% for sem in site.sem %}
     <li><a href="{{ sem.url }}">{{ sem.title }}</a></li>
   {% endfor %}
